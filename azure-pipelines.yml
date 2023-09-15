@@ -13,7 +13,7 @@ pool:
  
 
 variables:
-  - group: secrets
+  - group: DevOps
 
  
 
