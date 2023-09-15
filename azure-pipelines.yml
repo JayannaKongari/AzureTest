@@ -1,11 +1,11 @@
 
 
 trigger:
-- master
+- main
 pr:
 branches:
 inclue:
--master
+-main
 pool:
   vmImage: ubuntu-latest
 variables:
