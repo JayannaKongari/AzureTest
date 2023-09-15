@@ -25,4 +25,14 @@ stages:
         steps:
           - script: |
               echo "Empty job."
-          
+          - task: codeBeamer@1
+            inputs:
+              test_xml_folder: '.'
+              test_run_name: '$(Build.DefinitionName) $(Build.Reason)'
+              test_run_id: '$(Build.BuildId)'
+              server_url: 'http://192.168.10.90:8083/cb'
+              cb_user: '$(cb_user)'
+              cb_password: '$(cb_password)'
+              test_configuration_id: '2144'
+              test_case_tracker_id: '2145'
+              test_run_tracker_id: '2146'
